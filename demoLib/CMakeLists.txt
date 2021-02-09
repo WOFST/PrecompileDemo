@@ -4,6 +4,9 @@ file (GLOB_RECURSE prj_includeFiles ${CMAKE_SOURCE_DIR}/include/${PROJECT_NAME}/
 file (GLOB_RECURSE prj_headerFiles ${CMAKE_CURRENT_SOURCE_DIR}/*.h)
 file (GLOB_RECURSE prj_srcFiles ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+
 add_library(${PROJECT_NAME} SHARED 
 	${prj_includeFiles} 
 	${prj_headerFiles} 
