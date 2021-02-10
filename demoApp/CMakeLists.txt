@@ -15,9 +15,9 @@ find_package(Qt5 COMPONENTS Widgets)
 target_link_libraries(${PROJECT_NAME} 
 	PRIVATE 
 	demoLib)
-	
-# link200
+
+# successful	
 #target_precompile_headers(${PROJECT_NAME} PRIVATE "stdafx.h")
 
-# successful
+# link200
 target_precompile_headers(${PROJECT_NAME} REUSE_FROM demoLib)
